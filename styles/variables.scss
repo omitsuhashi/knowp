@@ -1,0 +1,7 @@
+$spacing-base: 4px;
+
+// colors
+@import "colors";
+@media (prefers-color-scheme: dark) {
+  @import "dark_colors";
+}
