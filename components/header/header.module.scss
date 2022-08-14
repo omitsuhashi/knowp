@@ -1,0 +1,7 @@
+@import "styles/variables";
+
+#account-part {
+  & > *:not(:last-child) {
+    padding-right: $spacing-base * 8;
+  }
+}
