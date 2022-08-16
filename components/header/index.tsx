@@ -28,13 +28,11 @@ const _AvatarHeader: FC<Props> = ({isLoggedIn}) => {
 const _Header: FC<Props> = ({isLoggedIn}) => {
   return (
     <Box display={"flex"} flexDirection={"row"} alignItems={"center"} justifyContent={"space-between"} flexWrap={"nowrap"}>
-      <Typography variant="h4" gutterBottom>Knowp</Typography>
-      <div>
-        <Box display={"flex"} flexDirection={"row"} alignItems={"center"} className={styles.accountPart}>
-          <SearchOutlinedIcon></SearchOutlinedIcon>
-          <_AvatarHeader isLoggedIn={isLoggedIn} />
-        </Box>
-      </div>
+      <Typography variant="h4" gutterBottom className={styles.logo}>Knowp</Typography>
+      <Box display={"flex"} flexDirection={"row"} alignItems={"center"} className={styles.rightPane}>
+        <SearchOutlinedIcon></SearchOutlinedIcon>
+        <_AvatarHeader isLoggedIn={isLoggedIn} />
+      </Box>
     </Box>
   );
 }

@@ -1,7 +1,10 @@
 @import "styles/variables";
 
-#account-part {
-  & > *:not(:last-child) {
-    padding-right: $spacing-base * 8;
+.logo {
+}
+
+.rightPane {
+  >*:not(:last-child) {
+    padding-right: $spacing-base * 4;
   }
 }
